@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Don't Argue | For Women Who Are Done Explaining Themselves</title>
+    <meta name="description" content="Stop explaining. Start protecting your energy. Learn the 6 patterns that trap your energy and how to escape them.">
+    <link rel="preconnect" href="https://www.amazon.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #3d3d3d;
+            background: #faf9f7;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        /* Elegant Headers */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #f5f0eb 0%, #faf9f7 100%);
+            padding: 140px 0 120px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 24px;
+            line-height: 1.3;
+            color: #2a2a2a;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.15rem;
+            color: #6b6b6b;
+            margin-bottom: 16px;
+            font-weight: 300;
+            letter-spacing: 0.03em;
+        }
+        
+        .hero .emphasis {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            color: #8b7355;
+            margin-bottom: 48px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 16px 56px;
+            background: #c9a689;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.4s ease;
+            border: 1px solid #c9a689;
+        }
+        
+        .cta-button:hover {
+            background: #b89578;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(201,166,137,.25);
+        }
+        
+        .trust-note {
+            margin-top: 24px;
+            font-size: 0.85rem;
+            color: #999;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Book Showcase */
+        .book-showcase {
+            background: #fff;
+            padding: 0;
+        }
+        
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 0;
+            min-height: 600px;
+        }
+        
+        .showcase-image {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px;
+        }
+        
+        .showcase-image img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,.3);
+        }
+        
+        .showcase-content {
+            padding: 80px 60px;
+        }
+        
+        .showcase-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+        
+        .showcase-content p {
+            font-size: 1.05rem;
+            color: #6b6b6b;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .showcase-content .signature {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #8b7355;
+            margin-top: 32px;
+        }
+        
+        /* The Vow Section */
+        .vow {
+            text-align: center;
+            background: #f5f0eb;
+            padding: 120px 0;
+        }
+        
+        .vow h2 {
+            font-size: 3rem;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            color: #2a2a2a;
+        }
+        
+        .vow .tagline {
+            font-size: 1.1rem;
+            color: #6b6b6b;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        /* Patterns Section */
+        .patterns-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+        
+        .patterns-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 80px;
+        }
+        
+        .patterns-intro h3 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+        
+        .patterns-intro p {
+            font-size: 1.05rem;
+            color: #6b6b6b;
+            line-height: 1.8;
+        }
+        
+        .patterns-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .pattern-card {
+            text-align: center;
+            padding: 40px 30px;
+            background: #faf9f7;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .pattern-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,.08);
+        }
+        
+        .pattern-symbol {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .pattern-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: #2a2a2a;
+        }
+        
+        .pattern-desc {
+            font-size: 0.95rem;
+            color: #6b6b6b;
+            line-height: 1.6;
+        }
+        
+        /* What You'll Gain */
+        .benefits {
+            background: #f5f0eb;
+            padding: 100px 0;
+        }
+        
+        .benefits h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #2a2a2a;
+        }
+        
+        .benefits-list {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style: none;
+        }
+        
+        .benefits-list li {
+            padding: 32px 0;
+            border-bottom: 1px solid #e5ddd5;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .benefits-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .benefit-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            width: 40px;
+        }
+        
+        .benefit-content h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #2a2a2a;
+        }
+        
+        .benefit-content p {
+            font-size: 1rem;
+            color: #6b6b6b;
+            line-height: 1.7;
+        }
+        
+        /* Quote Section */
+        .quote-section {
+            background: #2a2a2a;
+            color: #f5f0eb;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .quote-section blockquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 1.7;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .quote-section cite {
+            display: block;
+            margin-top: 32px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            opacity: 0.6;
+        }
+        
+        /* For You Section */
+        .for-you {
+            background: #fff;
+            padding: 100px 0;
+        }
+        
+        .for-you h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #2a2a2a;
+        }
+        
+        .for-you-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .for-you-card {
+            padding: 32px;
+            background: #faf9f7;
+            border-left: 3px solid #c9a689;
+        }
+        
+        .for-you-card p {
+            font-size: 1.05rem;
+            color: #3d3d3d;
+            line-height: 1.7;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #f5f0eb 0%, #faf9f7 100%);
+            text-align: center;
+            padding: 120px 0;
+        }
+        
+        .final-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+        
+        .final-cta .book-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: #6b6b6b;
+            margin: 32px 0 40px;
+        }
+        
+        .final-cta .author {
+            font-size: 1rem;
+            color: #999;
+            margin-top: 32px;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            background: #2a2a2a;
+            color: #999;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+        
+        footer a {
+            color: #c9a689;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #b89578;
+        }
+        
+        /* Divider */
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: #c9a689;
+            margin: 40px auto;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            section {
+                padding: 70px 0;
+            }
+            
+            .showcase-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .showcase-image {
+                padding: 60px 40px;
+                min-height: 400px;
+            }
+            
+            .showcase-content {
+                padding: 60px 30px;
+            }
+            
+            .patterns-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .for-you-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .vow h2 {
+                font-size: 2.2rem;
+            }
+            
+            h2, h3 {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>You're Done<br>Explaining Yourself</h1>
+            <p class="subtitle">Stop wasting energy on arguments that go nowhere.</p>
+            <p class="emphasis">Reclaim your power without burning out.</p>
+            <a href="https://www.amazon.com/Dont-Argue-Women-Explaining-Themselves-ebook/dp/B0FXT4JXV8" class="cta-button" aria-label="Buy I Don't Argue on Amazon" rel="noopener noreferrer" target="_blank">Get The Book</a>
+            <p class="trust-note">Available on Amazon · Kindle & Paperback</p>
+        </div>
+    </section>
+    
+    <!-- BOOK SHOWCASE -->
+    <section class="book-showcase">
+        <div class="showcase-grid">
+            <div class="showcase-image">
+                <img src="book-cover.jpg" alt="I Don't Argue book cover" style="max-width: 320px;">
+            </div>
+            <div class="showcase-content">
+                <h2>A Different Kind<br>of Strength</h2>
+                <div class="divider"></div>
+                <p>You've been fighting battles you can't win. With your partner. Your boss. Your family. Strangers online.</p>
+                <p>You explain. They push back. You defend. They attack. You prove your point. It doesn't matter.</p>
+                <p>You're exhausted.</p>
+                <p class="signature">— There's another way.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- THE VOW -->
+    <section class="vow">
+        <div class="container">
+            <h2>I don't argue.<br>With anyone.<br>Ever.</h2>
+            <div class="divider"></div>
+            <p class="tagline">Not because I'm weak. Not because I'm avoiding conflict. Because I refuse to waste my energy on battles that don't serve me.</p>
+        </div>
+    </section>
+    
+    <!-- PATTERNS -->
+    <section class="patterns-section">
+        <div class="container">
+            <div class="patterns-intro">
+                <h3>The Six Patterns</h3>
+                <div class="divider"></div>
+                <p>Learn to recognize the patterns that trap your energy—and exactly how to escape them.</p>
+            </div>
+            
+            <div class="patterns-grid">
+                <div class="pattern-card">
+                    <span class="pattern-symbol">🌀</span>
+                    <h4 class="pattern-title">The Maze</h4>
+                    <p class="pattern-desc">Arguments loop endlessly. Clarity moves forward.</p>
+                </div>
+                
+                <div class="pattern-card">
+                    <span class="pattern-symbol">🔥</span>
+                    <h4 class="pattern-title">The Fire</h4>
+                    <p class="pattern-desc">Conflict grows when fueled. Calm removes oxygen.</p>
+                </div>
+                
+                <div class="pattern-card">
+                    <span class="pattern-symbol">🎣</span>
+                    <h4 class="pattern-title">The Hook</h4>
+                    <p class="pattern-desc">Bait tries to catch you. Don't bite.</p>
+                </div>
+                
+                <div class="pattern-card">
+                    <span class="pattern-symbol">⏳</span>
+                    <h4 class="pattern-title">The Hourglass</h4>
+                    <p class="pattern-desc">Wisdom lives in the pause.</p>
+                </div>
+                
+                <div class="pattern-card">
+                    <span class="pattern-symbol">🚪</span>
+                    <h4 class="pattern-title">The Door</h4>
+                    <p class="pattern-desc">Boundaries open new paths.</p>
+                </div>
+                
+                <div class="pattern-card">
+                    <span class="pattern-symbol">🌊</span>
+                    <h4 class="pattern-title">The Ripple</h4>
+                    <p class="pattern-desc">Your calm spreads outward.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BENEFITS -->
+    <section class="benefits">
+        <div class="container">
+            <h3>What You'll Gain</h3>
+            <ul class="benefits-list">
+                <li>
+                    <span class="benefit-icon">✦</span>
+                    <div class="benefit-content">
+                        <h4>Word-for-Word Scripts</h4>
+                        <p>For work, home, family, and online. Know exactly what to say when someone tries to pull you into an argument.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="benefit-icon">✦</span>
+                    <div class="benefit-content">
+                        <h4>Real Stories, Real Results</h4>
+                        <p>From women who stopped arguing and started winning. See how the patterns play out in marriage, workplace drama, and family chaos.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="benefit-icon">✦</span>
+                    <div class="benefit-content">
+                        <h4>Your Energy Back</h4>
+                        <p>Stop losing yourself in fights that change nothing. Reclaim the time and mental space you've been wasting on unwinnable battles.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- QUOTE -->
+    <section class="quote-section">
+        <div class="container">
+            <blockquote>
+                "I do not wish them to have power over men; but over themselves."
+                <cite>Mary Wollstonecraft, 1792</cite>
+            </blockquote>
+        </div>
+    </section>
+    
+    <!-- FOR YOU -->
+    <section class="for-you">
+        <div class="container">
+            <h3>This Book Is For You If</h3>
+            <div class="for-you-grid">
+                <div class="for-you-card">
+                    <p>You're tired of defending yourself in conversations that go nowhere</p>
+                </div>
+                <div class="for-you-card">
+                    <p>You're done with the endless loop of explaining, proving, justifying</p>
+                </div>
+                <div class="for-you-card">
+                    <p>You want boundaries without the battle, clarity without the conflict</p>
+                </div>
+                <div class="for-you-card">
+                    <p>You're ready to protect your power and reclaim your peace</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready?</h2>
+            <div class="divider"></div>
+            <p class="book-title"><strong>I Don't Argue</strong><br>For Women Who Are Done Explaining Themselves</p>
+            <a href="https://www.amazon.com/Dont-Argue-Women-Explaining-Themselves-ebook/dp/B0FXT4JXV8" class="cta-button" aria-label="Buy I Don't Argue on Amazon" rel="noopener noreferrer" target="_blank">Buy on Amazon</a>
+            <p class="author">by Cherie Linda</p>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pixique LLC. All rights reserved.</p>
+            <p style="margin-top: 16px;">
+                <a href="https://instagram.com/TheCherieLinda" target="_blank" rel="noopener noreferrer">Instagram</a> · 
+                <a href="https://idontargue.com/tracker">Free Tracker</a> · 
+                <a href="https://cherielinda.com" rel="noopener noreferrer">cherielinda.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

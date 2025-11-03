@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Weekly Argument Tracker | I Don't Argue</title>
+    <meta name="description content="Get your free Weekly Argument Pattern Tracker. Track patterns, notice triggers, and reclaim your energy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #3d3d3d;
+            background: #faf9f7;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        /* Elegant Headers */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #f5f0eb 0%, #faf9f7 100%);
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            color: #2a2a2a;
+        }
+        
+        .hero .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #8b7355;
+            margin-bottom: 16px;
+        }
+        
+        .hero p {
+            font-size: 1.05rem;
+            color: #6b6b6b;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: #c9a689;
+            margin: 32px auto;
+        }
+        
+        /* Preview Section */
+        .preview {
+            background: #fff;
+            padding: 100px 0;
+        }
+        
+        .preview h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+        
+        .preview-intro {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 60px;
+            font-size: 1.05rem;
+            color: #6b6b6b;
+            line-height: 1.8;
+        }
+        
+        .tracker-preview {
+            background: #faf9f7;
+            border-radius: 8px;
+            padding: 48px;
+            box-shadow: 0 8px 30px rgba(0,0,0,.06);
+            margin-bottom: 60px;
+        }
+        
+        .tracker-preview h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 12px;
+            text-align: center;
+            color: #2a2a2a;
+        }
+        
+        .tracker-preview .tagline {
+            text-align: center;
+            font-style: italic;
+            color: #8b7355;
+            margin-bottom: 48px;
+            font-size: 1.05rem;
+        }
+        
+        .patterns-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+        
+        .pattern-item {
+            padding: 20px;
+            background: #fff;
+            border-left: 3px solid #c9a689;
+            border-radius: 4px;
+        }
+        
+        .pattern-item strong {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #2a2a2a;
+        }
+        
+        .pattern-item span {
+            display: block;
+            margin-top: 4px;
+            font-size: 0.9rem;
+            color: #6b6b6b;
+        }
+        
+        .tracker-features {
+            margin-top: 48px;
+            padding-top: 48px;
+            border-top: 1px solid #e5ddd5;
+        }
+        
+        .tracker-features h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 24px;
+            text-align: center;
+            color: #2a2a2a;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .feature {
+            padding: 16px;
+            font-size: 0.95rem;
+            color: #6b6b6b;
+            background: #fff;
+            border-radius: 4px;
+        }
+        
+        .feature:before {
+            content: "✦";
+            margin-right: 10px;
+            color: #c9a689;
+        }
+        
+        /* Email Capture */
+        .email-capture {
+            background: linear-gradient(135deg, #f5f0eb 0%, #faf9f7 100%);
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .email-capture h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+        
+        .email-capture p {
+            font-size: 1.05rem;
+            color: #6b6b6b;
+            margin-bottom: 48px;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .beehiiv-embed {
+            border-radius: 8px !important;
+            box-shadow: 0 8px 30px rgba(0,0,0,.08) !important;
+        }
+        
+        .privacy-note {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 20px;
+            letter-spacing: 0.03em;
+        }
+        
+        /* Benefits */
+        .benefits {
+            background: #fff;
+            padding: 100px 0;
+        }
+        
+        .benefits h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .benefit {
+            text-align: center;
+            padding: 40px 30px;
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            display: block;
+        }
+        
+        .benefit h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: #2a2a2a;
+        }
+        
+        .benefit p {
+            font-size: 0.95rem;
+            color: #6b6b6b;
+            line-height: 1.7;
+        }
+        
+        /* Quote Section */
+        .quote-section {
+            background: #2a2a2a;
+            color: #f5f0eb;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .quote-section blockquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.7;
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .quote-section .author-note {
+            margin-top: 24px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Book CTA */
+        .book-cta {
+            background: #f5f0eb;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .book-cta h3 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+        
+        .book-cta p {
+            font-size: 1.05rem;
+            color: #6b6b6b;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+        
+        .book-link {
+            display: inline-block;
+            padding: 16px 56px;
+            background: #c9a689;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.4s ease;
+            border: 1px solid #c9a689;
+        }
+        
+        .book-link:hover {
+            background: #b89578;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(201,166,137,.25);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            background: #2a2a2a;
+            color: #999;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+        
+        footer a {
+            color: #c9a689;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #b89578;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            h2, h3 {
+                font-size: 2rem !important;
+            }
+            
+            .tracker-preview {
+                padding: 32px 24px;
+            }
+            
+            .patterns-list {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefit-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Free<br>Argument Pattern Tracker</h1>
+            <div class="divider"></div>
+            <p class="subtitle">Track. Notice. Exit. Repeat.</p>
+            <p>The simple tool that helps you recognize patterns, protect your energy, and stop losing yourself in unwinnable battles.</p>
+        </div>
+    </section>
+    
+    <!-- PREVIEW -->
+    <section class="preview">
+        <div class="container">
+            <h2>What's Inside</h2>
+            <div class="divider"></div>
+            <p class="preview-intro">A beautifully designed, printable tracker to help you notice the six patterns that trap your energy—and build your exit strategies.</p>
+            
+            <div class="tracker-preview">
+                <h3>Weekly Argument Pattern Tracker</h3>
+                <p class="tagline">Track. Notice. Exit. Repeat.</p>
+                
+                <div class="patterns-list">
+                    <div class="pattern-item">
+                        <strong>🌀 The Maze</strong>
+                        <span>arguments loop endlessly</span>
+                    </div>
+                    <div class="pattern-item">
+                        <strong>🔥 The Fire</strong>
+                        <span>conflict grows when fueled</span>
+                    </div>
+                    <div class="pattern-item">
+                        <strong>🎣 The Hook</strong>
+                        <span>bait tries to catch you</span>
+                    </div>
+                    <div class="pattern-item">
+                        <strong>⏳ The Hourglass</strong>
+                        <span>wisdom lives in the pause</span>
+                    </div>
+                    <div class="pattern-item">
+                        <strong>🚪 The Door</strong>
+                        <span>boundaries open new paths</span>
+                    </div>
+                    <div class="pattern-item">
+                        <strong>🌊 The Ripple</strong>
+                        <span>your calm spreads outward</span>
+                    </div>
+                </div>
+                
+                <div class="tracker-features">
+                    <h4>Track Everything That Matters</h4>
+                    <div class="features-grid">
+                        <div class="feature">Pattern recognition checklist</div>
+                        <div class="feature">Exit strategy planning</div>
+                        <div class="feature">Physical cue awareness</div>
+                        <div class="feature">Script preparation space</div>
+                        <div class="feature">Energy saved tracker</div>
+                        <div class="feature">Weekly reflection prompts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- EMAIL CAPTURE -->
+    <section class="email-capture">
+        <div class="container">
+            <h2>Get Your Free Tracker</h2>
+            <div class="divider"></div>
+            <p>Enter your email and I'll send it straight to your inbox.</p>
+            
+            <div class="email-form">
+                <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+                <iframe src="https://subscribe-forms.beehiiv.com/f436bce0-2da9-420e-b215-80520aa0daa7" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 100%; height: 339px; margin: 0; border-radius: 8px !important; background-color: transparent; box-shadow: 0 8px 30px rgba(0,0,0,.08); max-width: 100%;"></iframe>
+                <p class="privacy-note">No spam. Unsubscribe anytime. Privacy respected.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BENEFITS -->
+    <section class="benefits">
+        <div class="container">
+            <h3>What You'll Gain</h3>
+            <div class="divider"></div>
+            <div class="benefit-grid">
+                <div class="benefit">
+                    <span class="benefit-icon">✦</span>
+                    <h4>Pattern Awareness</h4>
+                    <p>Stop reacting blindly. Start recognizing the patterns before they trap your energy.</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">✦</span>
+                    <h4>Exit Strategies</h4>
+                    <p>Build your toolkit of calm, effective responses that protect your power.</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">✦</span>
+                    <h4>Energy Tracking</h4>
+                    <p>See the cumulative impact of refusing to argue. Your peace compounds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- QUOTE -->
+    <section class="quote-section">
+        <div class="container">
+            <blockquote>
+                "You don't have to be perfect. You'll miss some patterns. Every time you notice—even if you don't exit cleanly—you're building the muscle."
+            </blockquote>
+            <p class="author-note">Arguments scatter. Sovereignty gathers.</p>
+        </div>
+    </section>
+    
+    <!-- BOOK CTA -->
+    <section class="book-cta">
+        <div class="container">
+            <h3>Want the Complete System?</h3>
+            <div class="divider"></div>
+            <p>This tracker is from <em>I Don't Argue</em>, the book that shows you how to reclaim your power in every conflict—at home, at work, with family, and online.</p>
+            <a href="https://www.amazon.com/Dont-Argue-Women-Explaining-Themselves-ebook/dp/B0FXT4JXV8" class="book-link" rel="noopener noreferrer" target="_blank">Get The Book</a>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pixique LLC. All rights reserved.</p>
+            <p style="margin-top: 16px;">
+                <a href="https://instagram.com/TheCherieLinda" target="_blank" rel="noopener noreferrer">Instagram</a> · 
+                <a href="https://idontargue.com">idontargue.com</a> · 
+                <a href="https://cherielinda.com" rel="noopener noreferrer">cherielinda.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
